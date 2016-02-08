@@ -29,5 +29,18 @@
     <script src="https://code.getmdl.io/1.0.6/material.min.js"></script>
     <script src="dist/build.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+
+    <script>
+      var hammer = new Hammer(document.getElementById("app"));
+
+      hammer.on('swiperight', function(e) {
+        $("#drawer").addClass("is-visible");
+      }).on('swipeleft', function(e) {
+        $("#drawer").removeClass("is-visible");
+      });
+    </script>
+
   </body>
 </html>

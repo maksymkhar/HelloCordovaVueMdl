@@ -1,5 +1,5 @@
 <template>
-  <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50"
+  <div id="drawer" class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50"
        v-bind:class="{ 'is-visible': visible}">
     <header class="demo-drawer-header">
       <img src="img/user.jpg" class="demo-avatar">
